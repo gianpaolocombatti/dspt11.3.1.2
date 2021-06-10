@@ -1,4 +1,4 @@
 from .twitter import create_app
 
-app = create_app()
+APP = create_app()
 
