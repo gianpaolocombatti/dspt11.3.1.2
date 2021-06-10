@@ -11,7 +11,6 @@ colorama==0.4.4
 cymem==2.0.5
 dnspython==2.1.0
 docutils==0.17.1
--e git+https://github.com/gianpaolocombatti/dspt11-assignment-module1.git@41a09a3bb8a0da8469d8d610b61212dd238017cd#egg=dspt11_assignment_gpc
 Flask==2.0.1
 Flask-SQLAlchemy==2.5.1
 greenlet==1.1.0
