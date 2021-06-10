@@ -1,11 +1,11 @@
 import os.path
 from os import path
 from flask import Flask, request
-from twitter_app.twitter_data_model import User, Tweet, DB
+from .twitter_data_model import User, Tweet, DB
 import random
-from twitter_app.twitter_database_functions import upsert_user
+from .twitter_database_functions import upsert_user
 import spacy
-from twitter_app.predict import get_most_likely_author
+from .predict import get_most_likely_author
 
 
 def create_app():

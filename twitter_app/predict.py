@@ -1,7 +1,7 @@
 import numpy as np
 from sklearn.linear_model import LogisticRegression
 from sklearn.preprocessing import LabelEncoder
-from twitter_app.twitter_data_model import User
+from .twitter_data_model import User
 import pandas as pd
 
 

@@ -1,6 +1,6 @@
 import tweepy
 import os
-from twitter_app.twitter_data_model import DB, Tweet, User
+from .twitter_data_model import DB, Tweet, User
 import spacy
 import numpy as np
 from functools import partial
