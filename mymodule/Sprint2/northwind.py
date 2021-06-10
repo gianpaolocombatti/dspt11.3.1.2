@@ -1,6 +1,9 @@
 import sqlite3
+import os
 
-conn = sqlite3.connect("northwind_small.sqlite3")
+path = os.path.abspath(os.path.join(os.pardir,'../northwind_small.sqlite3'))
+
+conn = sqlite3.connect(path)
 
 curs = conn.cursor()
 

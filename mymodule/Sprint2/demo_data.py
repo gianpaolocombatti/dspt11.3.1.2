@@ -1,6 +1,8 @@
 import sqlite3
+import os
+path = os.path.abspath(os.path.join(os.pardir,'../demo_data.sqlite3'))
 
-conn = sqlite3.connect("demo_data.sqlite3")
+conn = sqlite3.connect(path)
 
 curs = conn.cursor()
 #
@@ -10,7 +12,7 @@ curs = conn.cursor()
 # insert_information = """insert into demo (s,x,y) values ('g',3,9),('v',5,7),('f',8,7)"""
 # insert_information_execute = curs.execute(insert_information)
 #
-# # commit = conn.commit()
+# commit = conn.commit()
 
 row_count = """select count(*) from demo"""
 row_count_results = curs.execute(row_count).fetchall()
